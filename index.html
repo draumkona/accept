@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Morsmordre</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form class="form">
+      <div class="obrazek">
+        <label for="obrazek">Link do obrazka:</label>
+        <input type="text" id="obrazek" name="obrazek" />
+      </div>
+      <div class="admin">
+        <label for="admin">Sprawdzający:</label>
+        <select name="admin" id="admin">
+          <option value="domyslne" selected disabled hidden>-</option>
+          <option value="tristan">Tristan Rosier</option>
+          <option value="ramsey">Ramsey Mulciber</option>
+          <option value="william">William Moore</option>
+        </select>
+      </div>
+      <div class="ranga">
+        <label for="ranga">Przynależność:</label>
+        <select name="ranga" id="ranga">
+          <option value="domyslne" selected disabled hidden>-</option>
+          <option value="zakon">Zakon Feniksa</option>
+          <option value="rycerze">Rycerze Walpurgii</option>
+          <option value="neutralni">Neutralni</option>
+          <option value="charlak">Charłaki</option>
+          <option value="duchy">Duchy</option>
+          <option value="dzieci">Dzieci</option>
+        </select>
+      </div>
+      <button type="submit">Wygeneruj kod</button>
+    </form>
+  </body>
+</html>
