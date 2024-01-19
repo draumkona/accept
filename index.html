@@ -16,24 +16,33 @@
         <label for="admin">Sprawdzający:</label>
         <select name="admin" id="admin">
           <option value="domyslne" selected disabled hidden>-</option>
-          <option value="tristan">Tristan Rosier</option>
-          <option value="ramsey">Ramsey Mulciber</option>
-          <option value="william">William Moore</option>
+          <option value="Tristan Rosier">Tristan Rosier</option>
+          <option value="Ramsey Mulciber">Ramsey Mulciber</option>
+          <option value="William Moore">William Moore</option>
         </select>
       </div>
       <div class="ranga">
         <label for="ranga">Przynależność:</label>
         <select name="ranga" id="ranga">
           <option value="domyslne" selected disabled hidden>-</option>
-          <option value="zakon">Zakon Feniksa</option>
-          <option value="rycerze">Rycerze Walpurgii</option>
-          <option value="neutralni">Neutralni</option>
-          <option value="charlak">Charłaki</option>
-          <option value="duchy">Duchy</option>
-          <option value="dzieci">Dzieci</option>
+          <option value="--akceptzakon">Zakon Feniksa</option>
+          <option value="--akceptrycerz">Rycerze Walpurgii</option>
+          <option value="--akceptneutral">Neutralni</option>
+          <option value="--akceptmugol">Charłaki</option>
+          <option value="--akceptduchy">Duchy</option>
+          <option value="--akceptdziecko">Dzieci</option>
         </select>
       </div>
-      <button type="submit">Wygeneruj kod</button>
+      <button type="submit" id="gen-btn">Wygeneruj kod</button>
+      <label for="kod"></label>
+      <textarea name="kod" id="kod" cols="80" rows="18">
+<div class="akcept_ramka"><div class="akcept_karty"><div style="background:url('OBRAZEK')" class="akcept_obrazek --agora"></div><div class="akcept_kontener"><h1 id="akcept_powitanie">Witamy wśród Morsów</h1><span class="akcept_powitanie_male">twoja karta została zaakceptowana</span><ul class="akcept_lista">
+<li class="akcept_element"><a href="https://www.morsmordre.net/t3204-szukam-towarzystwa">znajdź towarzystwo</a></li> • <li class="akcept_element"><a href="https://www.morsmordre.net/t11063p375-komponenty-magiczne-ii#340747">wylosuj komponenty</a></li> • <li class="akcept_element"><a href="https://www.morsmordre.net/t461-zakladanie-mieszkan#1196">załóż domek</a></li><li class="akcept_element"><a href="https://www.morsmordre.net/t2585-mapa-forum#40953">mapa forum</a></li> • <li class="akcept_element"><a href="https://www.morsmordre.net/f382-wazne">pogotowie graficzne i kody</a></li> • <li class="akcept_element"><a href="https://www.morsmordre.net/t1668-ekipa-forum#17177">ekipa forum</a></li><br></ul>
+<div class="akcept_obrazek --akceptneutral"></div><span class="akcept_sprawdzajacy">Kartę sprawdzał: Sam-Wiesz-Kto</span>
+</div></div></div></textarea
+      >
     </form>
+
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
